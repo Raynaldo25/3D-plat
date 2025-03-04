@@ -45,7 +45,7 @@ public class PlayerMovement : MonoBehaviour
         transform.rotation = Quaternion.Euler(0f, myLook.x, 0f);
         myCam.transform.rotation = Quaternion.Euler(-myLook.y, myLook.x, 0f);
 
-        if (Input.GetKey(KeyCode.S))
+      /*  if (Input.GetKey(KeyCode.S))
         {
             rb.AddForce(Vector3.back * speed);
         }
@@ -60,7 +60,7 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKey(KeyCode.W))
         {
             rb.AddForce(Vector3.forward * speed);
-        }
+        }*/
         if (Input.GetKey(KeyCode.Space) && onFloor == true)
         {
             rb.AddForce(Vector3.up * jumpForce);
@@ -81,6 +81,7 @@ public class PlayerMovement : MonoBehaviour
     private void FixedUpdate()
     {
         Vector3 myDir = transform.TransformDirection(Dir());
+        rb.AddForce(myDir * speed);
     }
 
     Vector3 Dir()
