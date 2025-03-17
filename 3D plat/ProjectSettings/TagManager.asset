@@ -8,6 +8,7 @@ TagManager:
   - bot
   - lava
   - p1
+  - chest
   layers:
   - Default
   - TransparentFX

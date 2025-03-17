@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -101,5 +102,20 @@ public class PlayerMovement : MonoBehaviour
         //combining them here
         deltaLook = new Vector3(rotX, rotY, 0);
         return deltaLook;
+    }
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == "chest")
+        {
+            score++;
+            GameManager.Instance.Score++;
+            Destroy(collision.gameObject);
+        }
+        if (collision.gameObject.tag == "lava")
+        {
+            
+            Destroy(gameObject);
+            SceneManager.LoadScene("end");
+        }
     }
 }
