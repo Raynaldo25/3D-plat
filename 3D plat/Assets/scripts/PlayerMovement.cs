@@ -13,6 +13,7 @@ public class PlayerMovement : MonoBehaviour
     public float speed = 2f;
     public float lookSpeed = 5f;
     public float jumpForce = 6f;
+    public float liftForce = 12f;
     public int score = 0;
 
     public Boolean onFloor;
@@ -116,6 +117,12 @@ public class PlayerMovement : MonoBehaviour
             
             Destroy(gameObject);
             SceneManager.LoadScene("end");
+        }
+        if(collision.gameObject.tag == "lift")
+        {
+            
+            rb.AddForce(Vector3.up * liftForce);
+            
         }
     }
 }
