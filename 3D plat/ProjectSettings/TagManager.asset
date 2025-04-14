@@ -10,6 +10,7 @@ TagManager:
   - p1
   - chest
   - lift
+  - tar
   layers:
   - Default
   - TransparentFX
