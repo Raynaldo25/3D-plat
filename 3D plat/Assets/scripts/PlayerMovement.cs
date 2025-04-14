@@ -17,6 +17,7 @@ public class PlayerMovement : MonoBehaviour
     public int score = 0;
 
     public Boolean onFloor;
+    public bool onTarget;
 
     public GameObject myCam;
     public float camLock = 90;
@@ -73,11 +74,17 @@ public class PlayerMovement : MonoBehaviour
     void OnCollisionStay(Collision collision)
     {
         if (collision.gameObject.tag == "Ground") { onFloor = true; }
+        if (collision.gameObject.tag == "Tar") 
+        {
+            onFloor = true;
+            onTarget = true;
+        }
     }
 
     void OnCollisionExit(Collision collision)
     {
         onFloor = false;
+        onTarget = false;
     }
 
     private void FixedUpdate()

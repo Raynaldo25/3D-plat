@@ -11,8 +11,9 @@ GameObject:
   - component: {fileID: 326859188154395726}
   - component: {fileID: 1098049457831351302}
   - component: {fileID: 5366281857831778423}
-  - component: {fileID: 1946880598349114324}
   - component: {fileID: -6460015958041923219}
+  - component: {fileID: 6949640096705212885}
+  - component: {fileID: -2134036354253790002}
   m_Layer: 0
   m_Name: target
   m_TagString: tar
@@ -41,7 +42,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3432067459360036668}
-  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &5366281857831778423
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -83,20 +84,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &1946880598349114324
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3432067459360036668}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!54 &-6460015958041923219
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -113,3 +100,33 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &6949640096705212885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3432067459360036668}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f43a08038787c94badbcc3b9757c5f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0.008
+  lifeTime: 5
+  timer: 0
+  targetTower: {fileID: 0}
+  myPlayer: {fileID: 0}
+--- !u!65 &-2134036354253790002
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3432067459360036668}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
