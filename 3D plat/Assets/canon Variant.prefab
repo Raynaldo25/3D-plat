@@ -11,6 +11,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: canon Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 7736842154824063253, guid: 6bec83e9601aa1443a0fb362810f91bf, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 8556262120643298411, guid: d3c303e2718ceb849a53d39eab94c4ad, type: 3}
     - target: {fileID: 7736842154824063255, guid: 6bec83e9601aa1443a0fb362810f91bf, type: 3}
       propertyPath: m_RootOrder
       value: 0

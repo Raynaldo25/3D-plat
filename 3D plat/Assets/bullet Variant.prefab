@@ -67,5 +67,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: bullet Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 2423305464245728654, guid: 6eaa7d6cc12c19a4fb16b39949f00ef5, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: -3631159909506098806, guid: 28f47d80bc95498439cdafc67733ef34, type: 3}
+    - target: {fileID: 2423305464245728655, guid: 6eaa7d6cc12c19a4fb16b39949f00ef5, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: -849867405023671905, guid: b69ab7dc4a09f094885bf950a65c44c3, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6eaa7d6cc12c19a4fb16b39949f00ef5, type: 3}
