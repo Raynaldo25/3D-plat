@@ -7,6 +7,7 @@ using UnityEngine.SocialPlatforms.Impl;
 public class end : MonoBehaviour
 {
     public TextMeshProUGUI ScoreDisplay;
+    public TextMeshProUGUI Time;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,5 +18,6 @@ public class end : MonoBehaviour
     void Update()
     {
         ScoreDisplay.text = "Score: " + GameManager.Instance.Score;
+        Time.text = "Time: " + GameManager.Instance.endTime;
     }
 }

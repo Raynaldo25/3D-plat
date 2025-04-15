@@ -7,7 +7,7 @@ using UnityEngine.SocialPlatforms.Impl;
 
 public class GameManager : MonoBehaviour
 {
-    public float endTime = 100f;
+    public float endTime = 0f;
     public int Score;
     public TextMeshProUGUI scoreDisplay;
     public TextMeshProUGUI timerDisplay;
@@ -31,7 +31,7 @@ public class GameManager : MonoBehaviour
     {
         if (SceneManager.GetActiveScene().name == "SampleScene")
         {
-            endTime = 200f;
+            endTime = 0f;
             Score = 0;
         }
     }
@@ -44,13 +44,9 @@ public class GameManager : MonoBehaviour
 
         if (SceneManager.GetActiveScene().name == "SampleScene")
         {
-            endTime -= Time.deltaTime;
+            endTime += Time.deltaTime;
         }
-        if (endTime <= 0.0f && SceneManager.GetActiveScene().name == "SampleScene")
-        {
         
-            SceneManager.LoadScene("won");
-        }
 
     }
 }
