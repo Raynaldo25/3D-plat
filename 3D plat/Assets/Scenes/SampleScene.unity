@@ -4082,7 +4082,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e399918a467ead641a607207c8d3f082, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  endTime: 200
+  endTime: 0
   Score: 0
   scoreDisplay: {fileID: 841490658}
   timerDisplay: {fileID: 1072074783}

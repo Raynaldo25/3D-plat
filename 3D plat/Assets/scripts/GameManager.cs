@@ -14,6 +14,10 @@ public class GameManager : MonoBehaviour
 
     public static GameManager Instance;
 
+    public bool Coin1 = false;
+    public bool Coin2 = false;
+    public bool Coin3 = false;
+
     private void Awake()
     {
         if (Instance == null)
@@ -33,6 +37,10 @@ public class GameManager : MonoBehaviour
         {
             endTime = 0f;
             Score = 0;
+
+            Coin1 = false;
+            Coin2 = false;
+            Coin3 = false;
         }
     }
 

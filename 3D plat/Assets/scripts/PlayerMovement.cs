@@ -11,6 +11,8 @@ public class PlayerMovement : MonoBehaviour
     Rigidbody rb;
     Vector3 myLook;
 
+    public GameManager GM;
+
     public float speed = 2f;
     public float lookSpeed = 5f;
     public float jumpForce = 6f;
@@ -150,18 +152,21 @@ public class PlayerMovement : MonoBehaviour
         if (collision.gameObject.tag == "Coin1")
         {
             coin1.enabled = true;
+            GameManager.Instance.Coin1 = true;
             Destroy(collision.gameObject);
 
         }
         if (collision.gameObject.tag == "coin2")
         {
             coin2.enabled = true;
+            GameManager.Instance.Coin2 = true;
             Destroy(collision.gameObject);
 
         }
         if (collision.gameObject.tag == "coin3")
         {
             coin3.enabled = true;
+            GameManager.Instance.Coin3 = true;
             Destroy(collision.gameObject);
 
         }
