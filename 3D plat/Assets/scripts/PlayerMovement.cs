@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -16,11 +17,18 @@ public class PlayerMovement : MonoBehaviour
     public float liftForce = 12f;
     public int score = 0;
 
+   
+    public Image coin1;
+    public Image coin2;
+    public Image coin3;
+
     public Boolean onFloor;
     public bool onTarget;
 
     public GameObject myCam;
     public float camLock = 90;
+
+    public List<string> myInventory;
 
 
     // Start is called before the first frame update
@@ -28,6 +36,10 @@ public class PlayerMovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         myLook = Vector3.zero;
+
+        coin1.enabled = false;
+        coin2.enabled = false;
+        coin3.enabled = false;
     }
 
     // Update is called once per frame
@@ -131,5 +143,33 @@ public class PlayerMovement : MonoBehaviour
             rb.AddForce(Vector3.up * liftForce);
             
         }
+
+        /* if(collision with end star){
+             coin1.enabled. true
+         }*/
+        if (collision.gameObject.tag == "Coin1")
+        {
+            coin1.enabled = true;
+            Destroy(collision.gameObject);
+
+        }
+        if (collision.gameObject.tag == "coin2")
+        {
+            coin2.enabled = true;
+            Destroy(collision.gameObject);
+
+        }
+        if (collision.gameObject.tag == "coin3")
+        {
+            coin3.enabled = true;
+            Destroy(collision.gameObject);
+
+        }
     }
+    public void addItem(string item)
+    {
+        myInventory.Add(item);
+
+    }
+
 }

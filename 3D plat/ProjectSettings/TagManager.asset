@@ -12,6 +12,9 @@ TagManager:
   - lift
   - tar
   - Tar
+  - Coin1
+  - coin2
+  - coin3
   layers:
   - Default
   - TransparentFX
