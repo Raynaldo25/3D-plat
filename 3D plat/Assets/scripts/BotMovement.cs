@@ -23,7 +23,10 @@ public class BotMovement : MonoBehaviour
         if (GameManager.Instance)
         {
             GameManager.Instance.Score = 0;
-            GameManager.Instance.endTime = 200;
+            GameManager.Instance.endTime = 0;
+            GameManager.Instance.Coin1 = false;
+            GameManager.Instance.Coin2 = false;
+            GameManager.Instance.Coin3 = false;
         }
             SceneManager.LoadScene(sceneToLoad);
         
