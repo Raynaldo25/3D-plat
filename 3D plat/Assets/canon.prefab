@@ -96,5 +96,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bullet: {fileID: 2423305464245728652, guid: 6eaa7d6cc12c19a4fb16b39949f00ef5, type: 3}
   spawnTimer: 0
-  spawnInterval: 1
+  spawnInterval: 2.5
   thisTower: {fileID: 7736842154824063251}

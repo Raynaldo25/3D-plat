@@ -18,6 +18,9 @@ public class UI : MonoBehaviour
     void Update()
     {
         ScoreDisplay.text = "Score: " + GameManager.Instance.Score;
-        TimeDisplay.text = "Time: " + GameManager.Instance.endTime;
+
+
+
+         TimeDisplay.text = "Time: " + GameManager.Instance.endTime.ToString("F2");
     }
 }

@@ -75,5 +75,9 @@ PrefabInstance:
       propertyPath: bullet
       value: 
       objectReference: {fileID: 4879145240428707801, guid: c1b6d62c93e094245a9006926ffefabf, type: 3}
+    - target: {fileID: 7736842154824063272, guid: 6bec83e9601aa1443a0fb362810f91bf, type: 3}
+      propertyPath: spawnInterval
+      value: 2.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6bec83e9601aa1443a0fb362810f91bf, type: 3}
