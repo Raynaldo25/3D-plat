@@ -24993,7 +24993,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GM: {fileID: 0}
   speed: 10
-  lookSpeed: 700
+  lookSpeed: 500
   jumpForce: 25
   liftForce: 500
   score: 0
